@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yandex Table Tab</title>
+
+    <!-- Bootstrap core css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel=stylesheet href="css/style.css"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div id="tab_box">
+                <!-- TABS -->
+                <div id="tabs" class="row">
+                </div>
+
+                <!-- FEATURES -->
+                <div id="features" class="row">
+                    <div class="left">
+                        <a class="button" id="all_bookmarks">All bookmarks</a>
+                        <a class="button" id="recent">Recent</a>
+                    </div>
+                    <div class="right">
+                        <a class="button" id="addBookmark"
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="ADD Bookmark">
+                            <i class="far fa-plus-square"></i>
+                            Add</a>
+                        <a class="button" id="customize_layout">Customize layout</a>
+                        <a class="button" id="backgrounds_gallery">Change Wallpaper</a>
+                    </div>
+                </div>
+
+                <!-- ADDITIONAL BOX -->
+                <div class="row" id="additional_box">
+                    <div id="add_box">
+                        <div id="box">
+                            <input type="text"id="siteURL" class="form-control" placeholder="Website URL">
+                            <input type="text" id="siteName" class="form-control" placeholder="Websie Name">
+                            <input type="file" id="siteImg" class="custom-file-input">
+                            <button id="add" onclick="addBookmark()" class="btn btn-block btn-danger">CLICK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <!-- Bootstrap core js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- JavaScript Codes -->
+    <script src="js/deleteBookmark.js"></script>
+    <script src="js/imageData.js"></script>
+    <script src="js/reset.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
